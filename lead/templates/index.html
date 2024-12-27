@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static django_bootstrap5 globaltags i18n %}
+
+{% block title %}
+Home | {% global_var 'COMPANY_NAME' %}
+{% endblock %}
+
+{% block content %}
+<div class="container container-fluid">
+  <h1 class="text-center my-4">Products</h1>
+  <hr class="w-100 text-center fw-bolder">
+  <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+
+  </div>
+</div>
+{% endblock %}

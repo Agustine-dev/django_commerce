@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static django_bootstrap5 globaltags i18n %}
+
+{% block title %}
+Home | {% global_var 'COMPANY_NAME' %}
+{% endblock %}
+
+{% block content %}
+
+<section id="showcase-inner" class="py-5 showcase-text">
+    <div class="container bg-blur">
+      <div class="row">
+        <div class="col-md-12 my-4">
+          <h1 class="display-4 my-3 showcase-text">
+            {{ title }}
+          </h1>
+          {% include 'search.html' %}
+  
+        </div>
+      </div>
+    </div>
+  </section>
+  
+{% endblock %}

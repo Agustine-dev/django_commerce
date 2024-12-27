@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static django_bootstrap5 globaltags i18n %}
+
+{% block title %}
+ | {{ title }}
+{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+{% if user.is_staff %}
+
+<a href="{% url 'admin:listings_listing_change' listing.id %}" target="_blank"
+class="btn btn-info text-white mr-0">
+Edit
+</a>
+{% endif %}
+{% endif%}
+<section class="py-4">
+    <div class="container">
+        <div class="row col-12 px-0">
+            <div class="col-4">
+        {{ price }}
+            </div>
+            <div class="col-8">
+                <a href="{% url 'products:products' %}" class="btn btn-light mb-4">{{ _("Go Back") }}</a>
+            </div>
+        </div>       
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,33 @@
+#id_password1, #id_password2 {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.375rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;  
+}
+
+.nav-link.btn.btn-primary.text-warning.fw-bold.m-1:hover {
+    color: navajowhite!important;
+    box-shadow: 1px -1px 10px 7px white;
+    transition: 0.4s ease-in all;
+}
+
+.hunnid.brand {
+    width:100px;
+    height: 100px;
+    border-radius: 33px;
+}
+.card.card-cover.h-100.overflow-hidden.text-bg-dark.rounded-4.shadow-lg {
+    background-repeat: round;
+    background-size: contain;
+}

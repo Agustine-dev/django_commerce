@@ -1,0 +1,19 @@
+<div class="col-md-6 col-lg-4 mb-4">
+    <div class="card product-preview"> 
+      <a href="{% url 'products:product' product.id %}" class="stretched-link">
+        <img class="card-img-top product-img" src="{{ product.image.url }}" alt=""> 
+        <div class="card-img-overlay">
+          <h2>
+            <span class="badge badge-success">${{ product.price }}</span>
+          </h2>
+        </div>
+        <div class="card-body">
+          <div class="product-heading text-center max-box">
+            <h4 class="text-primary">{{ product.title }}</h4>
+          </div>
+      </a>
+      <hr>
+      <a href="{% url 'products:product' product.id %}" class="btn btn-secondary btn-block">{{ _("More Info") }}</a>
+    </div>
+  </div>
+  </div>

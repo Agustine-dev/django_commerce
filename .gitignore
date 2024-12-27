@@ -1,0 +1,7 @@
+*.sqlite3
+static/img/logo
+static/vendor
+media/*
+
+**/migrations
+**/__pycache__

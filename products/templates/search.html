@@ -1,0 +1,31 @@
+{% load static django_bootstrap5 globaltags i18n %}
+
+{% block content %}
+<section id="showcase-inner" class="showcase-search text-white py-5">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+            <form>
+              <input class="form-control mt-2 py-4"/>
+            </form>
+        </div>
+      </div>
+    </div>
+</section>
+  <!-- Listings -->
+  <section id="listings" class="py-4">
+    <div class="container">
+      <div class="row">
+        {% if products %}
+        {% for product in products %}
+          {% include 'product-box.html' %}
+        {% endfor %}
+      {% else %}
+        <div class="col-md-12">
+          <p>{{ _("No Products Available!") }}</p>
+        </div>
+      {% endif %}
+      </div>
+    </div>
+</section>
+{% endblock %}
